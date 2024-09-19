@@ -1,6 +1,6 @@
 # Semester Project - Room Reconstruction using Deep Learning
-The goal of the project is to develop a deep learning-based solution for reconstructing a room's 3D structure from a set of 2D images. The system should be able to identify walls, floors, ceilings, and furniture, and accurately render the geometry of the room in a 3D space.
-The proposed solution relies on deep learning architectures, particularly convolutional neural networks (CNNs), to process the input images, extract meaningful spatial information, and estimate the 3D structure.
+The goal of the project is to develop a deep learning-based solution for reconstructing a room's 3D structure from a set of 2D images. The system should be able to identify walls, floors, ceilings, and furniture, and accurately render the geometry of the room in a 3D space. <br />
+The proposed solution relies on deep learning architectures, particularly convolutional neural networks (CNNs), to process the input images, extract meaningful spatial information, and estimate the 3D structure. <br />
 The features extracted from the 2D images would may be something like edges of the room, texture and maybe objects kept in the room. Acc to ChatGPT, there exists pre-trained models, such as ResNet or VGG, which can be modeled to recognize architectural features and room components.
 
 # Part 1 - Data Acquisition
