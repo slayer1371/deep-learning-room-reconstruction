@@ -1,1 +1,1 @@
-# deep-learning-room-reconstruction
+# Semester Project - Room Reconstruction using Deep Learning
