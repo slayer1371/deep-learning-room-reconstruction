@@ -7,7 +7,7 @@ The features extracted from the 2D images would may be something like edges of t
 The conceptual design of 3D room reconstruction using stereo vision involves capturing stereo image pairs, calculating depth maps, generating 3D point clouds, and optionally creating a mesh for a solid model. With careful calibration and image processing, this approach can produce accurate 3D representations of indoor environments.
 
 # Part 2 - Data Acquisition
-Traditional Stereo Vision Approach : In a classical stereo vision project, training data in the ML sense may not be necessary, but you will need a dataset for testing and evaluation. 
-Stereo images of different rooms as your "testing" dataset to evaluate the performance of your 3D reconstruction algorithm.
+Traditional Stereo Vision Approach : In a classical stereo vision project, training data in the ML sense may not be necessary, but I will need a dataset for testing and evaluation. 
+Data - Stereo images of different rooms as my "testing" dataset to evaluate the performance of your 3D reconstruction algorithm.
 For stereo vision, this will include left and right images from multiple rooms.
 I collected a pair of pictures (left_image, right_image) of my living room(with the phone on the same plane, just dislocated horizontally by a short distance). If needed, I'll use all the rooms of my apartment for the project.
