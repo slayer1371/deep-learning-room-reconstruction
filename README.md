@@ -10,4 +10,4 @@ The conceptual design of 3D room reconstruction using stereo vision involves cap
 Traditional Stereo Vision Approach : In a classical stereo vision project, training data in the ML sense may not be necessary, but you will need a dataset for testing and evaluation. 
 Stereo images of different rooms as your "testing" dataset to evaluate the performance of your 3D reconstruction algorithm.
 For stereo vision, this will include left and right images from multiple rooms.
-I collected pairs of pictures (with the phone on the same plane, just dislocated horizontally by a short distance).
+I collected a pair of pictures (left_image, right_image) of my living room(with the phone on the same plane, just dislocated horizontally by a short distance). If needed, I'll use all the rooms of my apartment for the project.
