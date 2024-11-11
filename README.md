@@ -25,26 +25,27 @@ Methods applied for data pre-processing and feature extraction
 
 Justification for deciding to use these Algorithms - 
 - Histogram equalization - 
-a. Better Contrast: The contrast may be less than ideal while taking pictures in various lighting scenarios. By extending the intensity values, histogram equalization aids in improving the visibility of important features and structures in the picture. This facilitates the identification and matching of unique keypoints between images by feature detection techniques.
+- - Better Contrast: The contrast may be less than ideal while taking pictures in various lighting scenarios. By extending the intensity values, histogram equalization aids in improving the visibility of important features and structures in the picture. This facilitates the identification and matching of unique keypoints between images by feature detection techniques.
 
-b. Consistent Lighting circumstances: By normalizing the pixel intensity distributions across both images, histogram equalization can assist in minimizing lighting disparities if the left and right images in the stereo pair have different lighting circumstances. The accuracy of feature matching between stereo pictures is increased as a result of more consistent characteristics.
+- - Consistent Lighting circumstances: By normalizing the pixel intensity distributions across both images, histogram equalization can assist in minimizing lighting disparities if the left and right images in the stereo pair have different lighting circumstances. The accuracy of feature matching between stereo pictures is increased as a result of more consistent characteristics.
 
-c. Improved Feature Extraction: Keypoints are identified using local texture and intensity gradients using feature recognition methods like SIFT. Keypoints may be more difficult to see in photographs with low contrast or bad lighting. The robustness of subsequent matching is increased by histogram equalization, which guarantees the detection of additional keypoints.
+- - Improved Feature Extraction: Keypoints are identified using local texture and intensity gradients using feature recognition methods like SIFT. Keypoints may be more difficult to see in photographs with low contrast or bad lighting. The robustness of subsequent matching is increased by histogram equalization, which guarantees the detection of additional keypoints.
 
 - Gaussian Blurring
-a. Noise Reduction: Images frequently contain noise, particularly those taken in uncontrolled settings. Feature extraction methods like SIFT may discover incorrect or unstable keypoints as a result of this noise, leading to poor matching and untrustworthy correspondences. By lowering high-frequency noise, Gaussian blurring improves the stability and dependability of the keypoints for matching.
+- - Noise Reduction: Images frequently contain noise, particularly those taken in uncontrolled settings. Feature extraction methods like SIFT may discover incorrect or unstable keypoints as a result of this noise, leading to poor matching and untrustworthy correspondences. By lowering high-frequency noise, Gaussian blurring improves the stability and dependability of the keypoints for matching.
 
-b. Improved Keypoint Detection: SIFT and other feature extraction techniques are sensitive to small details and noise. The feature detection method can concentrate on bigger and more important elements by smoothing the image with a Gaussian blur, which lessens the effect of tiny, unimportant changes in pixel values. More reliable keypoint detection results from this.
+- - Improved Keypoint Detection: SIFT and other feature extraction techniques are sensitive to small details and noise. The feature detection method can concentrate on bigger and more important elements by smoothing the image with a Gaussian blur, which lessens the effect of tiny, unimportant changes in pixel values. More reliable keypoint detection results from this.
 
 - SIFT - Scale-Invariant Feature Transform
-a. Scale-Invariant - In stereo vision, differing distances or the camera's zoom level may cause the same object or scene to seem at different scales in the two views. Keypoints can be identified regardless of the scale at which they occur thanks to SIFT's scale invariance. For precise feature matching between photos that might not have been captured at the same zoom level, this is essential.
+- - Scale-Invariant - In stereo vision, differing distances or the camera's zoom level may cause the same object or scene to seem at different scales in the two views. Keypoints can be identified regardless of the scale at which they occur thanks to SIFT's scale invariance. For precise feature matching between photos that might not have been captured at the same zoom level, this is essential.
 
-b. Rotation-Invariant - Different camera orientations can cause images in a stereo pair to spin. Additionally, SIFT is rotation invariant, which means that no matter how much the image is rotated, it will still reliably identify keypoints.
+- - Rotation-Invariant - Different camera orientations can cause images in a stereo pair to spin. Additionally, SIFT is rotation invariant, which means that no matter how much the image is rotated, it will still reliably identify keypoints.
 
-c. Local Feature Descriptors - For every identified keypoint, SIFT calculates a descriptor that characterizes the local image structure surrounding that keypoint. Even if the images have different scales, or rotations, these distinguishing features can be utilized to match keypoints across them.
+- - Local Feature Descriptors - For every identified keypoint, SIFT calculates a descriptor that characterizes the local image structure surrounding that keypoint. Even if the images have different scales, or rotations, these distinguishing features can be utilized to match keypoints across them.
 
 - FLANN - Fast Library for Approximate Nearest Neighbors
-a. Fast Approximate Nearest Neighbor Search - It is designed to match feature descriptors quickly. The process of matching descriptors is computationally costly, particularly when working with big keypoint sets, which is common in stereo vision applications. By employing approximation techniques, FLANN greatly accelerates the procedure, which is adequate for the majority of real-world applications.
+- - Fast Approximate Nearest Neighbor Search - It is designed to match feature descriptors quickly. The process of matching descriptors is computationally costly, particularly when working with big keypoint sets, which is common in stereo vision applications. By employing approximation techniques, FLANN greatly accelerates the procedure, which is adequate for the majority of real-world applications.
 
-b. Handling Large Datasets - When dealing with huge keypoint datasets, as is frequently the case in room reconstruction where several characteristics must be matched across stereo pictures, FLANN is especially helpful. FLANN does approximation searches instead of exact ones, which enables scaled matching of many keypoints.
+- - Handling Large Datasets - When dealing with huge keypoint datasets, as is frequently the case in room reconstruction where several characteristics must be matched across stereo pictures, FLANN is especially helpful. FLANN does approximation searches instead of exact ones, which enables scaled matching of many keypoints.
 
+<img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat1.png?raw=true" alt="Illustration 1" width="300"/>
