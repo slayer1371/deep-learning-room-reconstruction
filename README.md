@@ -46,9 +46,9 @@ Justification for deciding to use these Algorithms -
     - Image correspondence problem - The image correspondence problem is about finding corresponding points or regions in two or more images that depict the same scene but possibly from different perspectives, scales, or lighting conditions. 
 
 - FLANN - Fast Library for Approximate Nearest Neighbors
-- - Fast Approximate Nearest Neighbor Search - It is designed to match feature descriptors quickly. The process of matching descriptors is computationally costly, particularly when working with big keypoint sets, which is common in stereo vision applications. By employing approximation techniques, FLANN greatly accelerates the procedure, which is adequate for the majority of real-world applications.
+    - Fast Approximate Nearest Neighbor Search - It is designed to match feature descriptors quickly. The process of matching descriptors is computationally costly, particularly when working with big keypoint sets, which is common in stereo vision applications. By employing approximation techniques, FLANN greatly accelerates the procedure, which is adequate for the majority of real-world applications.
 
-- - Handling Large Datasets - When dealing with huge keypoint datasets, as is frequently the case in room reconstruction where several characteristics must be matched across stereo pictures, FLANN is especially helpful. FLANN does approximation searches instead of exact ones, which enables scaled matching of many keypoints.
+    - Handling Large Datasets - When dealing with huge keypoint datasets, as is frequently the case in room reconstruction where several characteristics must be matched across stereo pictures, FLANN is especially helpful. FLANN does approximation searches instead of exact ones, which enables scaled matching of many keypoints.
 
 <img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat1.png?raw=true" alt="Illustration 1" width="300" /><img src = "https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustration1.png?raw=true" width = "500" />
 
