@@ -13,7 +13,7 @@ For stereo vision, this will include left and right images from multiple rooms.
 I collected 2 pairs of pictures (left_image, right_image) of my living room and my kitchen(with the phone on the same plane, just dislocated horizontally by a short distance). 
 
 # UPDATE
-During our conversation in class, you mentioned that 2 pairs of images were not enough for good grades, and advised me to collect more images in different lighting conditions. Also, when I asked that what should I be working on for the Semester Project update  - your advice was to solve the image correspondence problem. 
+During the conversation we had in class, you mentioned that 2 pairs of images were not enough for good grades, and advised me to collect more images in different lighting conditions. Also, when I asked that what should I be working on for the Semester Project update  - your advice was to solve the image correspondence problem. 
 So I bought a tripod for the accuracy of the image, and a multicolored lamp for more variations in the images. I collected 22 pairs of images using this setup, and resized them to the dimensions of 768x1024 pixels, in a seperate "resized-images" folder on github. 
 
 # Part 3 - 
@@ -50,6 +50,6 @@ Justification for deciding to use these Algorithms -
 
 <img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat1.png?raw=true" alt="Illustration 1" width="300" /><img src = "https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustration1.png?raw=true" width = "500" />
 
-<img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat2.png?raw=true" alt="Illustration 2" width="300" /><img src = "https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustration2.png?raw=true" width = "500" />
-
 <img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat3.png?raw=true" alt="Illustration 3" width="300" /><img src = "https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustration3.png?raw=true" width = "500" />
+
+It's not 100% optimal right now, with some matches going the wrong way. In the images, where there are reflections caused due to the glass door, the algorithm is making some wrong feature matching decisions, and I'll be working on correcting that.
