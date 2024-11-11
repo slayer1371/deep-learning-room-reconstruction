@@ -53,3 +53,8 @@ Justification for deciding to use these Algorithms -
 <img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat3.png?raw=true" alt="Illustration 3" width="300" /><img src = "https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustration3.png?raw=true" width = "500" />
 
 It's not 100% optimal right now, with some matches going the wrong way. In the images, where there are reflections caused due to the glass door, the algorithm is making some wrong feature matching decisions, and I'll be working on correcting that.
+
+Colab link, for your convenience, so that you don't have to clone my project folder into your setup. Also, colab allows cv2_imshow, and python allows cv2.imshow, so that may be different if the code is executed locally.
+https://colab.research.google.com/drive/1ydoMhAZBp_U2fRK1HCW5UrhA_qAE9g0x?usp=sharing
+
+Instructions to run on colab = Just take any left-right image pairs from the resized-images folder with the same number, for eg, left 10 and right10, or left20 and right20.
