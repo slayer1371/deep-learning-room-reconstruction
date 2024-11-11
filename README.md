@@ -48,8 +48,8 @@ Justification for deciding to use these Algorithms -
 
 - - Handling Large Datasets - When dealing with huge keypoint datasets, as is frequently the case in room reconstruction where several characteristics must be matched across stereo pictures, FLANN is especially helpful. FLANN does approximation searches instead of exact ones, which enables scaled matching of many keypoints.
 
-<img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat1.png?raw=true" alt="Illustration 1" width="300" /><img src = "https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustration1.png?raw=true" width = "300" />
+<img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat1.png?raw=true" alt="Illustration 1" width="300" /><img src = "https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustration1.png?raw=true" width = "500" />
 
-<img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat2.png?raw=true" alt="Illustration 2" width="300" /><img src = "https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustration2.png?raw=true" width = "300" />
+<img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat2.png?raw=true" alt="Illustration 2" width="300" /><img src = "https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustration2.png?raw=true" width = "500" />
 
-<img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat3.png?raw=true" alt="Illustration 3" width="300" /><img src = "https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustration3.png?raw=true" width = "300" />
+<img src="https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustrat3.png?raw=true" alt="Illustration 3" width="300" /><img src = "https://github.com/slayer1371/deep-learning-room-reconstruction/blob/main/illustrations/illustration3.png?raw=true" width = "500" />
