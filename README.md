@@ -25,11 +25,11 @@ Methods applied for data pre-processing and feature extraction
 
 Justification for deciding to use these Algorithms - 
 - Histogram equalization - 
-- - Better Contrast: The contrast may be less than ideal while taking pictures in various lighting scenarios. By extending the intensity values, histogram equalization aids in improving the visibility of important features and structures in the picture. This facilitates the identification and matching of unique keypoints between images by feature detection techniques.
+    - Better Contrast: The contrast may be less than ideal while taking pictures in various lighting scenarios. By extending the intensity values, histogram equalization aids in improving the visibility of important features and structures in the picture. This facilitates the identification and matching of unique keypoints between images by feature detection techniques.
 
-- - Consistent Lighting circumstances: By normalizing the pixel intensity distributions across both images, histogram equalization can assist in minimizing lighting disparities if the left and right images in the stereo pair have different lighting circumstances. The accuracy of feature matching between stereo pictures is increased as a result of more consistent characteristics.
+    - Consistent Lighting circumstances: By normalizing the pixel intensity distributions across both images, histogram equalization can assist in minimizing lighting disparities if the left and right images in the stereo pair have different lighting circumstances. The accuracy of feature matching between stereo pictures is increased as a result of more consistent characteristics.
 
-- - Improved Feature Extraction: Keypoints are identified using local texture and intensity gradients using feature recognition methods like SIFT. Keypoints may be more difficult to see in photographs with low contrast or bad lighting. The robustness of subsequent matching is increased by histogram equalization, which guarantees the detection of additional keypoints.
+  - Improved Feature Extraction: Keypoints are identified using local texture and intensity gradients using feature recognition methods like SIFT. Keypoints may be more difficult to see in photographs with low contrast or bad lighting. The robustness of subsequent matching is increased by histogram equalization, which guarantees the detection of additional keypoints.
 
 - Gaussian Blurring
 - - Noise Reduction: Images frequently contain noise, particularly those taken in uncontrolled settings. Feature extraction methods like SIFT may discover incorrect or unstable keypoints as a result of this noise, leading to poor matching and untrustworthy correspondences. By lowering high-frequency noise, Gaussian blurring improves the stability and dependability of the keypoints for matching.
