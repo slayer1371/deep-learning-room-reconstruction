@@ -43,6 +43,8 @@ Justification for deciding to use these Algorithms -
 
 - - Local Feature Descriptors - For every identified keypoint, SIFT calculates a descriptor that characterizes the local image structure surrounding that keypoint. Even if the images have different scales, or rotations, these distinguishing features can be utilized to match keypoints across them.
 
+    - Image correspondence problem - 
+
 - FLANN - Fast Library for Approximate Nearest Neighbors
 - - Fast Approximate Nearest Neighbor Search - It is designed to match feature descriptors quickly. The process of matching descriptors is computationally costly, particularly when working with big keypoint sets, which is common in stereo vision applications. By employing approximation techniques, FLANN greatly accelerates the procedure, which is adequate for the majority of real-world applications.
 
