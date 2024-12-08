@@ -92,7 +92,6 @@ Process -
 5. 3D Point Cloud Generation
     - Depth Mapping: The disparity values are converted into depth values (z-coordinates) based on the relationship between disparity and depth. The equation typically used for this is:
        <br /> 𝑧 = 𝑓⋅𝐵 / 𝑑 
- 
         - where,
         - f is the focal length, 
         - B is the baseline (distance between cameras), and 
