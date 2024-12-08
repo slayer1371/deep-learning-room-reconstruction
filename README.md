@@ -67,7 +67,7 @@ Update - Pivoted to Block matching rather than feature matching.
 Reason - 
 1. Used checkerboard pattern for camera calibaration and got values of K and camera intrinsic parameters.
 2. Tried to rectify left and right images using the techniques of stereo rectification, but was largely unsuccessful. Tried capturing images from different mobile device, but rectified left and rectified right never turned out correct.
-3. When 4 days passed, and the problem was not solved, switched to block matching usijng sliding window technique.
+3. When 4 days passed, and the problem was not solved, switched to block matching using sliding window technique.
 
 Process - 
 
@@ -91,13 +91,13 @@ Process -
 
 5. 3D Point Cloud Generation
     - Depth Mapping: The disparity values are converted into depth values (z-coordinates) based on the relationship between disparity and depth. The equation typically used for this is:
-        𝑧 = 𝑓⋅𝐵 / 𝑑 
+       <br /> 𝑧 = 𝑓⋅𝐵 / 𝑑 
  
-    - where,
-    - f is the focal length, 
-    - B is the baseline (distance between cameras), and 
-    - d is the disparity. 
-    This allows the creation of a 3D representation of the scene.
+    - - where,
+    - - f is the focal length, 
+    - - B is the baseline (distance between cameras), and 
+    - - d is the disparity. 
+    - - This allows the creation of a 3D representation of the scene.
     - RGB Mapping: Each point in the point cloud is enriched with color information from the corresponding pixel in the original image. This makes the final point cloud more meaningful for visualization, as it includes both 3D coordinates and color data.
 
 6. Visualization
