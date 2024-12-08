@@ -93,11 +93,11 @@ Process -
     - Depth Mapping: The disparity values are converted into depth values (z-coordinates) based on the relationship between disparity and depth. The equation typically used for this is:
        <br /> 𝑧 = 𝑓⋅𝐵 / 𝑑 
  
-    - - where,
-    - - f is the focal length, 
-    - - B is the baseline (distance between cameras), and 
-    - - d is the disparity. 
-    - - This allows the creation of a 3D representation of the scene.
+        - where,
+        - f is the focal length, 
+        - B is the baseline (distance between cameras), and 
+        - d is the disparity. 
+        - This allows the creation of a 3D representation of the scene.
     - RGB Mapping: Each point in the point cloud is enriched with color information from the corresponding pixel in the original image. This makes the final point cloud more meaningful for visualization, as it includes both 3D coordinates and color data.
 
 6. Visualization
