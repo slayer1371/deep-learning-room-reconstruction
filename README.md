@@ -101,3 +101,25 @@ Process -
 
 6. Visualization
     - Drag and drop the txt point_cloud file generated into cloud compare software, and check the visualization.
+  
+EXTRA INFORMATION - 
+Cloud Compare Software website - https://cloudcompare-org.danielgm.net/release/
+Use image pairs from update-images folder, not from the resized-images folder.
+When running the program, create 3 folders in your setup. 
+1. data
+    1.1. output folder
+    and the image pair
+
+This is because the program is configured such that the pointcloud file will be created and stored in output folder for ease of accessibility.
+
+How to change image pairs - Just change filename of the image you want to use in the program in the main() function.
+
+IMPROVEMENTS - 
+In some image pairs, the point cloud generated is 
+1. inverted and/or 
+2. a mirror image. 
+Will try to understand the reson behind this, and solve it.
+
+There was a concept that Prof Adam taught in the class, that keypoint matching can also be done by creating a number of small cnns' and using them instead of sift or sliding window technique. I will try to implement that, if possible for part 5.
+
+Updated colab link - https://colab.research.google.com/drive/1ydoMhAZBp_U2fRK1HCW5UrhA_qAE9g0x?usp=sharing
