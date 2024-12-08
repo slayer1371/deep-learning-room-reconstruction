@@ -60,3 +60,45 @@ Colab link, for your convenience, so that you don't have to clone my project fol
 https://colab.research.google.com/drive/1ydoMhAZBp_U2fRK1HCW5UrhA_qAE9g0x?usp=sharing
 
 Instructions to run on colab = Just take any left-right image pairs from the resized-images folder with the same number, for eg, left 10 and right10, or left20 and right20.
+
+# Part 4 - 
+
+Update - Pivoted to Block matching rather than feature matching.
+Reason - 
+1. Used checkerboard pattern for camera calibaration and got values of K and camera intrinsic parameters.
+2. Tried to rectify left and right images using the techniques of stereo rectification, but was largely unsuccessful. Tried capturing images from different mobile device, but rectified left and rectified right never turned out correct.
+3. When 4 days passed, and the problem was not solved, switched to block matching usijng sliding window technique.
+
+Process - 
+
+1. Block Matching for Disparity Calculation
+    - Stereo Matching: Works by comparing small windows of pixels (blocks) from the left and right images and calculating the difference between them.
+    - Efficiency: This technique is computationally simpler compared to feature-based matching (like SIFT), and works well when matching corresponding regions in relatively uniform or textured images.
+    - Fixed Window Size: The sliding window method (with a fixed window size) ensures that the local pixel neighborhoods are compared in both the left and right images, allowing the algorithm to find the pixel shifts (disparities) that correspond to differences in depth.
+    
+2. Sum of Absolute Differences (SAD) for Matching  
+    - Error Metric: The Sum of Absolute Differences (SAD) is used as a matching criterion to measure the similarity (or dissimilarity) between two image windows. It computes the absolute difference between pixel intensities in the left and right images, and the result is summed to quantify how closely the windows match.
+    - Efficiency: SAD is simple to compute and works well in block matching for dense stereo images. SAD strikes a good balance between performance and accuracy in this scenario.
+
+3. Post-Processing with Filtering (Mean and Mode)
+    - Noise Reduction: The disparity map generated initially may contain noise or inconsistencies due to mismatches in the stereo matching process. Post-processing smooths out these irregularities.
+    - Mean Filtering: The mean filter smooths the disparity map by averaging disparity values in a local neighborhood. This reduces small errors and helps refine the depth estimation.
+    - Mode Filtering: The mode filter assigns the most frequent disparity value in a neighborhood of pixels. This is useful for removing outliers and ensuring that the disparity map reflects more consistent depth values, especially in areas with large differences in depth.
+
+4. Thresholding of Disparity Values
+    - Outlier Removal: Thresholding ensures that extreme disparity values (likely resulting from mismatches or noise) are removed or reduced to more reasonable levels. For example, disparities that exceed a certain threshold are likely erroneous and are clipped to a lower value.
+    - Improved Depth Accuracy: By eliminating extreme disparity values, the final depth map becomes more accurate, especially in regions where matching is difficult due to occlusions, textureless surfaces, or noise.
+
+5. 3D Point Cloud Generation
+    - Depth Mapping: The disparity values are converted into depth values (z-coordinates) based on the relationship between disparity and depth. The equation typically used for this is:
+        𝑧 = 𝑓⋅𝐵 / 𝑑 
+ 
+    - where,
+    - f is the focal length, 
+    - B is the baseline (distance between cameras), and 
+    - d is the disparity. 
+    This allows the creation of a 3D representation of the scene.
+    - RGB Mapping: Each point in the point cloud is enriched with color information from the corresponding pixel in the original image. This makes the final point cloud more meaningful for visualization, as it includes both 3D coordinates and color data.
+
+6. Visualization
+    - Drag and drop the txt point_cloud file generated into cloud compare software, and check the visualization.
