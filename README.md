@@ -123,3 +123,19 @@ Will try to understand the reson behind this, and solve it.
 There was a concept that Prof Adam taught in the class, that keypoint matching can also be done by creating a number of small cnns' and using them instead of sift or sliding window technique. I will try to implement that, if possible for part 5.
 
 Updated colab link - https://colab.research.google.com/drive/1ydoMhAZBp_U2fRK1HCW5UrhA_qAE9g0x?usp=sharing
+
+Part 5 - 
+
+Description of the test database you collected or downloaded: I created a test database by capturing image pairs of 2 different rooms with different lighting conditions. 22 image pairs.
+
+This custom project for 3D room reconstruction using stereo vision doesn't directly involve classification metrics because it's not a supervised learning task requiring labeled data for training and testing. Instead, it falls under the domain of geometry-based computer vision, where the focus is on accurate estimation of spatial information rather than classification.
+
+No Training/Testing Data:
+
+In this project, I didn't train a model to classify objects or make predictions. Instead, I relied on mathematical algorithms (like triangulation and disparity computation) to reconstruct 3D scenes.
+The inputs are stereo images, and the outputs are point clouds or depth maps, which are evaluated geometrically rather than using classification metrics.
+
+Output Type:
+
+The final output is a 3D point cloud or 3D model, not a classification label or a decision boundary. The evaluation is based on geometric accuracy (e.g., how closely the reconstructed 3D model matches the real-world geometry).
+
