@@ -143,3 +143,19 @@ Some illustrations -
 <br />
 <img width="638" alt="Screenshot 2024-12-14 at 11 32 55 AM" src="https://github.com/user-attachments/assets/de3960f1-cc7c-4e8d-87dd-19e54f57ea56" />
 <img width="657" alt="Screenshot 2024-12-14 at 11 33 28 AM" src="https://github.com/user-attachments/assets/e26f07e4-4254-4ca6-a2da-a5c368fa30cb" />
+
+What went wrong - 
+Image cloud generated was always a mirror image through origin, but after compiling function mirror_image_origin(), which takes the initial image and passes a mirror image into the point_clooud_generator, so that the final result is the desired orientation, it works slightly better in the sense that the compiled image cloud is now a mirror image through y-axis, but is not inverted.
+
+Udates to the code - function mirror_image_origin()
+
+INSTRUCTIONS ON RUNNING THE CODE - 
+
+1. CREATE A FOLDER NAMED 'data' IN YOUR CONTENT FOLDER IN COLAB.
+2. INSIDE THIS FOLDER, CREATE ANOTHER FOLDER NAMED 'output'.
+3. UPLOAD THE IMAGE PAIR (FROM UPDATED-IMAGES) YOU WANT TO TEST INTO THE 'DATA' FOLDER CREATED ABOVE, NOT INTO THE OUTPUT FOLDER.
+4. RUN THE CELLS.
+5. AFTER SUCCESSFUL EXECUTION, DOWNLOAD THE POINT_CLOUD.TXT FILE GENERATED IN THE 'OUTPUT' FOLDER.
+6. DROP THIS FILE IN CLOUDCOMPARE SOFTWARE, AND VOILA, YOU'LL HAVE A CRUDE 3D RECONSTRUCTION OF THE IMAGES. INCREASE THE DEFAULT POINT WIDTH IN THE SOFTWARE FOR BETTER VISUALIZATION.
+
+Cloud Compare Software website - https://cloudcompare-org.danielgm.net/release/
