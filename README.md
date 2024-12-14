@@ -140,5 +140,6 @@ Output Type:
 The final output is a 3D point cloud or 3D model, not a classification label or a decision boundary. The evaluation is based on geometric accuracy (e.g., how closely the reconstructed 3D model matches the real-world geometry).
 
 Some illustrations - 
+<br />
 <img width="638" alt="Screenshot 2024-12-14 at 11 32 55 AM" src="https://github.com/user-attachments/assets/de3960f1-cc7c-4e8d-87dd-19e54f57ea56" />
 <img width="657" alt="Screenshot 2024-12-14 at 11 33 28 AM" src="https://github.com/user-attachments/assets/e26f07e4-4254-4ca6-a2da-a5c368fa30cb" />
